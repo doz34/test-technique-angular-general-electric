@@ -1,0 +1,11 @@
+<h1 id="titrepage">Nommez et Créez votre Chien !</h1>
+<app-add-dog (dogAdded)="onDogAdded()"></app-add-dog>
+<div class="container" *ngFor="let dog of dogs">
+  <h2 class="item item1">{{ dog.name }}</h2>
+  <img class="item item2" [src]="dog.img" alt="{{ dog.name }}" width="300" />
+  <div class="item-wrapper">
+    <input class="item item3" [(ngModel)]="dog.name" placeholder="New name" />
+    <button class="item item4" id="upd" (click)="updateDog(dog)">Modifier le nom</button>
+    <button class="item item5" id="del" (click)="deleteDog(dog)">Supprimer le chien</button>
+  </div>
+</div>

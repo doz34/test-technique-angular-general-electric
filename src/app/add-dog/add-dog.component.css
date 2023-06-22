@@ -1,0 +1,23 @@
+.addcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: aqua;
+  border: 2px solid grey;
+  padding: 1vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addcontainer * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: large;
+  max-width: fit-content;
+  min-width: fit-content;
+  padding: 1vh;
+}

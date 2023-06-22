@@ -1,0 +1,18 @@
+<div class="addcontainer">
+  <h2 class="additem">AJOUTEZ VOTRE CHIEN :</h2>
+  <form class="additem" (submit)="addDog()">
+    <div class="additemform">
+      <label class="additemsubform" for="name">NOM DU CHIEN:</label>
+      <input class="additemsubform" id="name" [(ngModel)]="dog.name" name="name" required />
+    </div>
+
+    <div class="additemform">
+      <label class="additemsubform" for="img">LIEN DE L'IMAGE:</label>
+      <input class="additemsubform" id="img" [(ngModel)]="dog.img" name="img" required />
+    </div>
+
+    <div class="additemform">
+      <button class="additemsubform" type="submit">AJOUTER LE CHIEN</button>
+    </div>
+  </form>
+</div>
